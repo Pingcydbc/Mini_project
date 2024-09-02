@@ -59,7 +59,7 @@ const Navbar = () => {
     <nav className={`navbar navbar-expand-lg ${styles.navbarCustom}`}>
       <div className="container-fluid">
         <Link className="navbar-brand d-flex align-items-center" href="./">
-          <span className={styles.navbarBrandText}>My Gu</span>
+          <span className={styles.navbarBrandText}>Door-sensor</span>
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
@@ -71,6 +71,9 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link className={`nav-link ${styles.navLink}`} href="/History">History</Link>
+            </li>
+            <li className="nav-item">
+              <Link className={`nav-link ${styles.navLink}`} href="/Motor">motor</Link>
             </li>
           </ul>
           <form className="d-flex align-items-center">

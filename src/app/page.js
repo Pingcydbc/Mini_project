@@ -323,7 +323,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className={`${styles.attackCountContainer} my-4`}>
+      {/* <div className={`${styles.attackCountContainer} my-4`}>
         <h2 className="text-center">Number of Attacks</h2>
         {attackCount !== null ? (
           <p className={`${styles.attackCount} text-center`}>{attackCount}</p>
@@ -340,7 +340,7 @@ export default function Dashboard() {
           Download Latest Data as CSV
         </button>
       </div>
-<br></br><br></br><br></br><br></br>
+
       <h2 className={`${styles.heading} text-center my-4`}>
         Latest Data
       </h2>
@@ -377,7 +377,7 @@ export default function Dashboard() {
             ))}
           </tbody>
         </table>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -37,28 +37,28 @@ export default function HistoryPage() {
           <thead className="thead-dark">
             <tr>
               <th>ID</th>
-              <th>LDR</th>
-              <th>VR</th>
+              {/* <th>LDR</th>
+              <th>VR</th> */}
               <th>Temperature</th>
               <th>Distance</th>
-              <th>Create At</th>
+              {/* <th>Create At</th> */}
             </tr>
           </thead>
           <tbody>
             {items.map((item) => (
               <tr key={item.id}>
                 <td>{item.id}</td>
-                <td>{item.ldr}</td>
-                <td>{item.vr}</td>
+                {/* <td>{item.ldr}</td>
+                <td>{item.vr}</td> */}
                 <td>{item.temp}</td>
                 <td>{item.distance}</td>
-                <td>
+                {/* <td>
                   {new Date(item.date).toLocaleString('th-TH', {
                     timeZone: 'Asia/Bangkok',
                     dateStyle: 'short',
                     timeStyle: 'short',
                   })}
-                </td>
+                </td> */}
               </tr>
             ))}
           </tbody>
