@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import styles from '../app/nav.module.css';
 
 const notifyUser = (command) => {
@@ -58,8 +57,8 @@ const Navbar = () => {
   return (
     <nav className={`navbar navbar-expand-lg ${styles.navbarCustom}`}>
       <div className="container-fluid">
-        <Link className="navbar-brand d-flex align-items-center" href="./">
-          <span className={styles.navbarBrandText}>Door-sensor</span>
+        <Link className={`navbar-brand d-flex align-items-center ${styles.navbarBrandText}`} href="./">
+          Door-sensor
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
@@ -73,7 +72,7 @@ const Navbar = () => {
               <Link className={`nav-link ${styles.navLink}`} href="/History">History</Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${styles.navLink}`} href="/Motor">motor</Link>
+              <Link className={`nav-link ${styles.navLink}`} href="/Motor">Motor</Link>
             </li>
           </ul>
           <form className="d-flex align-items-center">
