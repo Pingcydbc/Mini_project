@@ -17,7 +17,7 @@ export const dynamic = 'force-dynamic';
 // -------------------------------------------------------------------------------------
 export async function GET() {
   try {
-    const result = await client.query('SELECT * FROM "Pp058"');
+    const result = await client.query('SELECT * FROM "cyd042"');
     return new Response(JSON.stringify(result.rows), {
       status: 200,
       headers: {
@@ -53,10 +53,10 @@ export async function POST(request) {
 
     // Execute SQL query to insert data
     const res = await client.query(
-      'INSERT INTO "Pp058" (LDR, VR, TEMP, DISTANCE) VALUES ($1, $2, $3, $4) RETURNING *',
+      'INSERT INTO "cyd042" (LDR, VR, TEMP, DISTANCE) VALUES ($1, $2, $3, $4) RETURNING *',
       [ldrParsed, vrParsed, tempParsed, distanceParsed]
     );
-
+    
     // Return successful response
     return new Response(JSON.stringify(res.rows[0]), {
       status: 201,
